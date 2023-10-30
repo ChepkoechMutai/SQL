@@ -1,4 +1,4 @@
-###**[Revising the Select Query-1](https://www.hackerrank.com/challenges/revising-the-select-query)**
+###**SQL Question**
 
 
 Query all columns for all American cities in CITY with populations larger than 100,000. The CountryCode for America is USA.
@@ -21,7 +21,7 @@ SELECT * FROM CITY WHERE COUNTRYCODE = 'USA' AND POPULATION > 100000;
 ```
 
 
-###**[Revising the Select Query-2](https://www.hackerrank.com/challenges/revising-the-select-query-2)**
+###**[Revising the Select Query-2]**
 
 Query the names of all American cities in CITY with populations larger than 120,000. The CountryCode for America is USA.
 
@@ -43,7 +43,7 @@ The CITY table is described as follows:
 SELECT NAME FROM CITY WHERE COUNTRYCODE = 'USA' AND POPULATION > 120000;
 ```
 
-###**[Select All](https://www.hackerrank.com/challenges/select-all-sql)**
+###**[Select All]**
 
 Query all columns for every row in the CITY table.
 
@@ -65,7 +65,7 @@ The CITY table is described as follows:
 SELECT * FROM CITY;
 ```
 
-###**[Select by ID](https://www.hackerrank.com/challenges/select-by-id)**
+###**[Select by ID]**
 
 Query all columns for a city in CITY with the ID 1661.
 
@@ -87,7 +87,7 @@ The CITY table is described as follows:
 SELECT * FROM CITY WHERE ID = 1661; 
 ```
 
-###**[Japanese Cities' Detail](https://www.hackerrank.com/challenges/japanese-cities-detail)**
+###**[Japanese Cities' Detail]**
 
 Query the details for all the Japanese cities in CITY. The COUNTRYCODE for Japan is JPN.
 
@@ -109,7 +109,7 @@ The CITY table is described as follows:
 SELECT * FROM CITY WHERE COUNTRYCODE = 'JPN';        
 ```
 
-###**[Japanese Cities' Name](https://www.hackerrank.com/challenges/japanese-cities-name)**
+###**[Japanese Cities' Name]**
 
 Query the the names of all the Japanese cities in CITY. The COUNTRYCODE for Japan is JPN.
 
@@ -131,7 +131,7 @@ The CITY table is described as follows:
 SELECT NAME FROM CITY WHERE COUNTRYCODE = 'JPN';        
 ```
 
-###**[Weather Observation Station 1](https://www.hackerrank.com/challenges/weather-observation-station-1)**
+###**[Question 1]**
 
 Query a list of CITY and STATE from STATION.
 
@@ -153,7 +153,7 @@ The STATION table is described as follows:
 SELECT CITY,STATE FROM STATION;       
 ```
 
-###**[Weather Observation Station 3](https://www.hackerrank.com/challenges/weather-observation-station-3)**
+###**[Question 2 ]**
 
 Query a list of CITY names from STATION with even ID numbers only. You may print the results in any order, but must exclude duplicates from your answer.
 
@@ -176,7 +176,7 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 SELECT DISTINCT CITY FROM STATION WHERE MOD(ID,2)=0 ORDER BY CITY ASC;       
 ```
 
-###**[Weather Observation Station 4](https://www.hackerrank.com/challenges/weather-observation-station-4)**
+###**[Question 4]**
 
 Let NUM be the number of CITY entries in STATION, and NUMunique be the number of unique cities. Query the value of NUM−NUMunique from STATION.
 
@@ -201,7 +201,7 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 SELECT COUNT(CITY) - COUNT(DISTINCT CITY) FROM STATION;       
 ```
 
-###**[Weather Observation Station 5](https://www.hackerrank.com/challenges/weather-observation-station-5)**
+###**[ Question5]**
 
 Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
 
@@ -239,7 +239,7 @@ select city, length(city) from station order by length(city) DESC,city ASC fetch
 select city, length(city) from station order by length(city) asc ,city asc fetch first row only;      
 ```
 
-###**[Weather Observation Station 6](https://www.hackerrank.com/challenges/weather-observation-station-6)**
+###**[Question 6]**
 
 Query the list of CITY names starting with vowels (a, e, i, o, u) from STATION. Your result cannot contain duplicates.
 
@@ -263,7 +263,7 @@ SELECT DISTINCT(CITY) FROM STATION WHERE CITY LIKE 'A%' OR CITY LIKE 'E%' OR CIT
 OR CITY LIKE 'U%' ORDER BY CITY ASC;       
 ```
 
-###**[Weather Observation Station 7](https://www.hackerrank.com/challenges/weather-observation-station-7)**
+###**[ Question 7]**
 
 Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION. Your result cannot contain duplicates.
 
