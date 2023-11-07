@@ -1,4 +1,4 @@
-###**SQL Question**
+###**SQL Questions**
 
 
 Query all columns for all American cities in CITY with populations larger than 100,000. The CountryCode for America is USA.
@@ -287,7 +287,7 @@ SELECT DISTINCT(CITY) FROM STATION WHERE CITY LIKE '%a' OR CITY LIKE '%e' OR CIT
 OR CITY LIKE '%u';       
 ```
 
-###**[Weather Observation Station 8](https://www.hackerrank.com/challenges/weather-observation-station-8/problem)**
+###**[Question 8]**
 
 Query the list of CITY names from STATION which have vowels (i.e., a, e, i, o, and u) as both their first and last characters. Your result cannot contain duplicates.
 
@@ -310,7 +310,7 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 SELECT DISTINCT CITY FROM STATION WHERE (CITY LIKE 'A%' OR CITY LIKE 'E%' OR CITY LIKE 'I%' OR CITY LIKE 'O%' OR CITY LIKE 'U%') AND (CITY LIKE '%a' OR CITY LIKE '%e' OR CITY LIKE '%i' OR CITY LIKE '%o' OR CITY LIKE '%u') order by city;      
 ```
 
-###**[Weather Observation Station 9](https://www.hackerrank.com/challenges/weather-observation-station-9/problem)**
+###**[Question 9]**
 
 Query the list of CITY names from STATION that do not start with vowels. Your result cannot contain duplicates.
 
@@ -334,7 +334,7 @@ SELECT DISTINCT CITY FROM STATION WHERE upper(SUBSTR(CITY,1,1)) NOT IN ('A','E',
 ('a','e','i','o','u');     
 ```
 
-###**[Weather Observation Station 10](https://www.hackerrank.com/challenges/weather-observation-station-10/problem)**
+###**[Question 10]**
 
 Query the list of CITY names from STATION that do not end with vowels. Your result cannot contain duplicates.
 
@@ -357,7 +357,7 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 SELECT DISTINCT CITY FROM STATION WHERE UPPER(SUBSTR(CITY, LENGTH(CITY), 1)) NOT IN ('A','E','I','O','U') AND LOWER(SUBSTR(CITY, LENGTH(CITY),1)) NOT IN ('a','e','i','o','u');    
 ```
 
-###**[Weather Observation Station 11](https://www.hackerrank.com/challenges/weather-observation-station-11/problem)**
+###**[Question 11]**
 
 Query the list of CITY names from STATION that either do not start with vowels or do not end with vowels. Your result cannot contain duplicates.
 
@@ -380,7 +380,7 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 SELECT DISTINCT CITY FROM STATION WHERE LOWER(SUBSTR(CITY,1,1)) NOT IN ('a','e','i','o','u') OR LOWER(SUBSTR(CITY, LENGTH(CITY),1)) NOT IN ('a','e','i','o','u');   
 ```
 
-###**[Weather Observation Station 12](https://www.hackerrank.com/challenges/weather-observation-station-12/problem)**
+###**[Question 12]**
 
 Query the list of CITY names from STATION that do not start with vowels and do not end with vowels. Your result cannot contain duplicates.
 
@@ -403,7 +403,7 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 SELECT DISTINCT CITY FROM STATION WHERE LOWER(SUBSTR(CITY,1,1)) NOT IN ('a','e','i','o','u') AND LOWER(SUBSTR(CITY,LENGTH(CITY),1)) NOT IN ('a','e','i','o','u');    
 ```
 
-###**[Higher Than 75 marks](https://www.hackerrank.com/challenges/more-than-75-marks/problem)**
+###**[Question 13 ]**
 
 Query the Name of any student in STUDENTS who scored higher than 75 Marks. Order your output by the last three characters of each name. If two or more students both have names ending in the same last three characters (i.e.: Bobby, Robby, etc.), secondary sort them by ascending ID.
 
@@ -444,7 +444,7 @@ Only Ashley, Julia, and Belvet have Marks > 75. If you look at the last three ch
 SELECT NAME FROM STUDENTS WHERE MARKS > 75 ORDER BY SUBSTR(NAME, LENGTH(NAME)-2, 3), ID;    
 ```
 
-###**[Employee Names](https://www.hackerrank.com/challenges/name-of-employees/problem)**
+###**[Question 14]**
 
 Write a query that prints a list of employee names (i.e.: the name attribute) from the Employee table in alphabetical order.
 
@@ -494,7 +494,7 @@ Todd
 SELECT NAME FROM EMPLOYEE ORDER BY NAME;   
 ```
 
-###**[Employee Salaries](https://www.hackerrank.com/challenges/salary-of-employees/problem)**
+###**[Question 15]**
 
 Write a query that prints a list of employee names (i.e.: the name attribute) for employees in Employee having a salary greater than $2000 per month who have been employees for less than 10 months. Sort your result by ascending employee_id.
 
